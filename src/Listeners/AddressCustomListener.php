@@ -6,7 +6,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Http\Request;
 use Illuminate\Queue\InteractsWithQueue;
 
-class CustomerAddCustomAttributesListener
+class AddressCustomListener
 {
     protected $request;
 
@@ -35,7 +35,7 @@ class CustomerAddCustomAttributesListener
         }
 
         if ($this->request->has('number')) {
-            $address->document = $this->request->get('number');
+            $address->number = $this->request->get('number');
             $save = true;
         }
 
