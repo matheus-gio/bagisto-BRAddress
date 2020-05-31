@@ -1,0 +1,24 @@
+{
+    "name": "lucena/bagisto-braziladdress",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matheus Giovanni Lucena",
+            "email": "matheus.giovanni.lu@gmail.com"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Lucena\\BrazilAddress\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lucena\\BrazilAddress\\Providers\\BrazilAddressServiceProvider"
+            ]
+        }
+    }
+}
